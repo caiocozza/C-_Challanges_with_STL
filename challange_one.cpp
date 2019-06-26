@@ -27,6 +27,7 @@ auto challange1(std::vector<int> const& c) {
                          [](int a) { return a == 0;});
 }
 
+//[std::inner_product]
 //(2) Given an int container, count its elements that repeats sequentially.
 //Example: 1 2 2 3 4 4 5 > results in 2.
 auto challange2(std::vector<int> const& c) {
