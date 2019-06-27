@@ -47,3 +47,15 @@ auto challange2(std::vector<int> const& c) {
                               std::plus{},
                               std::equal_to{});
 }
+
+//[std::sort, std::minmax_element]
+//(3) Given an int container, grab the sum of the min and the max element.
+auto challange3(std::vector<int> const& c) -> int {
+    //creates a copy and sort it, in case the container is not sorted
+    std::vector<int> temp(c);
+    std::sort(std::begin(c), std::end(c));
+
+    auto [min, max] = std::minmax_element(std::cbegin(temp),
+                                          std::cend(temp));
+    return *min + *max;                                          
+}
