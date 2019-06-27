@@ -3,13 +3,13 @@
 #include <numeric>
 #include <algorithm>
 
-//This is a series of challanges that I'll be solving using STL
+//This is a series of challenges that I'll be solving using STL
 
 //[std::sort, std::adjacent_difference, std::count_if]
 //(1) Given an int container, create a sum of the elements that appears
 //more than once.
 //Example: 1 2 1 3 2 > results in 2. The 1 and 2 appears more than once
-auto challange1(std::vector<int> const& c) {
+auto challenge1(std::vector<int> const& c) {
     std::vector<int> temp(c); //makes a copy
     std::sort(std::begin(temp), std::end(temp)); //sorts the temp container
 
@@ -30,7 +30,7 @@ auto challange1(std::vector<int> const& c) {
 //[std::inner_product]
 //(2) Given an int container, count its elements that repeats sequentially.
 //Example: 1 2 2 3 4 4 5 > results in 2.
-auto challange2(std::vector<int> const& c) {
+auto challenge2(std::vector<int> const& c) {
     //with 2 containers, check from the first to the previous of the last
     //put the second one starting from the beggining plus one until the end
     //since the elements are repeated sequentially, we check if they are equal
@@ -50,7 +50,7 @@ auto challange2(std::vector<int> const& c) {
 
 //[std::sort, std::minmax_element]
 //(3) Given an int container, grab the sum of the min and the max element.
-auto challange3(std::vector<int> const& c) -> int {
+auto challenge3(std::vector<int> const& c) -> int {
     //creates a copy and sort it, in case the container is not sorted
     std::vector<int> temp(c);
     std::sort(std::begin(c), std::end(c));
