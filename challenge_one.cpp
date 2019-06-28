@@ -6,7 +6,7 @@
 //This is a series of challenges that I'll be solving using STL
 
 //[std::max_element, std::partial_sum, std::inner_product]
-//(4) Given a int container representing an elevation map where the with
+//(4) Given an int container representing an elevation map where the size
 //of each box is 1, grab how much water can we fit on it.
 //I'll consider the following container as the map:
 //[2, 1, 2, 0, 4, 2, 1, 4]
